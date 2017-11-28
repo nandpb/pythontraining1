@@ -1,0 +1,63 @@
+#Strings 
+#==========
+
+print('oracle university')
+
+print('doesn\'t')
+
+print("doesn\'t")
+
+print("\"Yes,\" he said.")
+
+
+s='firstline\nsecondline.'
+print(s)
+
+print('name \n age\n dateofBirth')
+
+#\n- new line 
+#String literal span multiple lines 
+
+print('C:\some\name')
+>>> print("""\
+... Usage: thingy [OPTIONS]
+...      -h                        Display this usage message
+...      -H hostname               Hostname to connect to
+... """)
+
+#Strings concatenated using + operator and repeated with *
+#=============================================================
+
+print(3 * 'un' + 'ium')
+
+
+print('Py' 'thon')
+
+
+#Concatenate variables
+#======================
+
+prefix='py'
+print(prefix + 'thon')
+
+
+
+#Strings – Indexing  and slicing 
+#=========================
+word= 'Python'
+print(word[0])
+
+print(word[1])
+
+print(word[2])
+
+print(word[-1])
+
+print(word[-2])
+
+print(word[:2] + word[2:])
+
+print(word[0:3])
+
+print(word[3:7])
+

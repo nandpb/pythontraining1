@@ -1,0 +1,217 @@
+
+
+
+
+
+#Fibanocci series
+#====================
+
+
+a, b = 0, 1
+while b < 10:
+    print(b)
+    a, b = b, a+b
+
+i = 256*256
+print('The value of i is', i)
+
+a, b = 0, 1
+while b < 1000:
+    print(b, end=',')
+    a, b = b, a+b
+
+
+
+#Conditional Statements
+#=========================
+x = int(input("Please enter an integer: "))
+
+if x < 0:
+     x = 0
+     print('Negative changed to zero')
+elif x == 0:
+     print('Zero')
+elif x == 1:
+     print('Single')
+else:
+     print('More')
+
+a=10  
+if a==10:  
+    print  "Hello User"  
+
+#3. Leap Year
+#============ 
+year=2000
+if year%4==0:
+     print ("year is leap")
+else:
+     print("year is not leap")
+
+#if else nested
+#===================
+
+
+a=10
+if a>=20:
+     print ("condition is true")
+else:
+     if a>=15:
+         print("checking second value")
+     else:
+         print("all conditions are false")
+
+
+#4.to display the table of numbers 
+#====================================
+
+num=2
+for a in range (1,6):
+     print (num * a)
+
+
+for letter in 'Python':     # First Example
+   print ('Current Letter :', letter)
+
+fruits = ['banana', 'apple',  'mango']
+for fruit in fruits:        # Second Example
+   print ('Current fruit :', fruit)
+
+print ("Good bye!")
+
+fruits = ['banana', 'apple',  'mango']
+for index in range(len(fruits)):
+   print ('Current fruit :', fruits[index])
+
+print ("Good bye!")
+#7 . Search for prime numbers 10 through 20 .
+#============================================
+
+for num in range(10,20):  #to iterate between 10 to 20
+   for i in range(2,num): #to iterate on the factors of the number
+      if num%i == 0:      #to determine the first factor
+         j=num/i          #to calculate the second factor
+         print ('%d equals %d * %d' % (num,i,j))
+         break #to move to the next number, the #first FOR
+   else:                  # else part of the loop
+      print (num, 'is a prime number')
+
+
+
+#While loop
+#=============
+
+
+count = 0
+while (count < 9):
+   print ('The count is:', count)
+   count = count + 1
+
+print "Good bye!"
+
+
+
+#Infinite loop
+#================
+
+var = 1
+while var == 1 :  # This constructs an infinite loop
+      num = raw_input("Enter a number  :")
+      print ("You entered: ", num)
+
+print ("Good bye!")
+
+
+#Loops with else statements
+#==============================
+
+count = 0
+while count < 5:
+     print (count, " is  less than 5")
+     count = count + 1
+else:
+     print (count, " is not less than 5")
+
+
+#Single Statement Suite
+#=========================
+
+flag = 1
+
+while (flag): 
+print ('Given flag is really true!')
+
+print ("Good bye!")
+
+
+#Find the sum of Natural numbers from 1 to 10.
+#=================================================
+
+
+sum=0  
+for n in range(1,11):  
+    sum+=n  
+    print (sum)
+
+
+
+#Nested Loops
+#=================
+
+
+for i in range (1,6):
+    for j in range(1,i+1):
+        print (i,end=" ")
+        print()
+
+
+
+
+#Print the pyramid 
+#======================
+
+for i in range (1,6):
+    for j in range (5,i-1,-1):
+        print("*",end="")
+        print()
+
+#While loop
+#============
+
+
+a=10  
+while a>0:  
+    print "Value of a is",a  
+    a=a-2
+
+
+#Program to add digits of a number
+#=====================================
+
+n=153  
+sum=0  
+while n>0:  
+    r=n%10  
+    sum+=r  
+    n=n/10  
+print (sum)
+Break statement
+for i in [1,2,3,4,5]:  
+       if i==4:  
+            print ("Element found")
+            break  
+    print (i)
+Continue Statement
+a=0  
+while a<=5:  
+        a=a+1  
+        if a%2==0:  
+              continue  
+    print (a)  
+    print ("End of Loop")
+Pass Statement
+for i in [1,2,3,4,5]:  
+      if  i==3:  
+           pass  
+           print ("Pass when value is",i)
+      print (i)

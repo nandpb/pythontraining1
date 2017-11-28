@@ -1,0 +1,66 @@
+#tuple ex
+
+t=(sweden,34,56.7)
+print(t)
+
+print(t[2])
+print(len(t))
+
+for item in t
+    print (item)
+#concatenate
+
+t =  t + (33867.5,265e9)
+print(t)
+#repetition
+print(t  2 )
+
+#nested tuples
+
+a=((21,33),(456,778),(555,888))
+print(a[2])
+
+print(a[2][1])
+
+h=(444)
+print(type(h))
+
+h=(456,)
+print(h)
+print(type(h))
+
+#empty tuple
+
+e=()
+print(e)
+
+p=1,2,3,4,5
+print(type(p))
+
+def minmax(items)
+    return min(items),max(items)
+print(minmax([12,67,99,85,102]))
+
+#tuple unpacking
+
+lower , upper = minmax([12,67,99,85,102])
+print(lower , upper)
+
+(a, (b, (c, d))) = (4, (3, (5, 6)))
+print(a)
+print(b)
+
+a='jelly'
+b='bean'
+a,b=b,a
+print(a , b )
+
+#tuple iterable constructor
+
+print(tuple([123,3456,45,8888]))
+print(tuple('carmichael'))
+
+#in and not in operators
+
+print (5 in (3,6,55,7,4))
+print (6 not in (78,23,98,123))

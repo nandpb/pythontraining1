@@ -1,0 +1,74 @@
+print ("Hello, Python!")
+    Hello, Python!
+
+word='this is a word'
+sentence="this is a sentence"
+para="""this is a paragraph
+... which is given in 3 lines"""
+
+print (word)
+print (para)
+
+
+# this is a comment
+#===========================
+... print ("hello") # this is another comment
+
+#5.	Variable Assignment
+#===========================
+counter = 100          # An integer assignment
+miles   = 1000.0       # A floating point
+name    = "John"       # A string
+print (counter)
+print (name)
+print (miles)
+
+
+#6.	Multiple Assignment 
+#===========================
+a,b,c=1,2,"joe"
+print (a, b, c)
+
+#7.	 Numbers 
+#===========================
+
+print('print 2+2 = : ',2 + 2)
+print('print 50 - 5*6 = :', 50-5*6)
+print('print(50 - 5*6) / 4 = :',(50 - 5*6) / 4)
+print('print 8 / 5 = :', 8/5)  # division always returns a floating point     number
+
+#8. division 
+#===========
+print(17 / 3)  # classic division returns a float
+
+
+print(17 // 3)  # floor division discards the fractional part
+
+print(17 % 3 ) # the % operator returns the remainder of the division
+
+print(5 * 3 + 2 ) # result * divisor + remainder
+
+
+#9 .** operators
+#===============
+print(5 ** 2 ) # 5 squared
+
+print(2 ** 7)  # 2 to the power of 7
+
+
+#10. Calculations 
+#===================
+
+print(5 ** 2 ) # 5 squared
+
+print(2 ** 7 ) # 2 to the power of 7
+
+#11.   Desk Calculator program
+#==============================
+
+tax = 12.5 / 100
+price = 100.50
+print(price * tax)
+
+print(round(price, 2))
+

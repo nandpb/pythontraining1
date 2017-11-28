@@ -1,0 +1,10 @@
+def char_frequency(str1):
+    s = {}
+    for n in str1:
+        keys = s.keys()
+        if n in keys:
+            s[n] += 1
+        else:
+            s[n] = 1
+    return s
+print(char_frequency('hellow welcome'))
