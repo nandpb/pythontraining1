@@ -18,8 +18,13 @@ count = 0 # To count Number of lines in the file
 for line in file1:
     count += 1
     words = line.split()
-    words[1]=float(words[1])
-    total += words[1]
+    try:
+        words[1]=float(words[1])
+        total += words[1]
+
+    except (ValueError, TypeError):
+        print("could not convert String to float")
+
     avg = total/count
 
 
