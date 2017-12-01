@@ -26,16 +26,22 @@ except FileNotFoundError:
     print("File not found")
 
 for line in file1:
-    count += 1
+
     words = line.split()
+    count += 1
 
     try:
         words[1]=float(words[1])
         total += words[1]
+        avg = total / count
 
     except (ValueError, TypeError):
         print("could not convert String to float")
-    avg = total/count
+    except (IndexError):
+        print("Index Error")
+    except ArithmeticError:
+        print("file is empty")
+
 
 
 print(avg)
